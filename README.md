@@ -1,5 +1,10 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+
 
 # env.MRmega (Environment-adjusted MR-MEGA)
 
@@ -9,7 +14,7 @@
 
 This is an R package for performing environment-adjusted MR-MEGA analysis aggregating all involved GWAS data. 
 
-Website available: https://github.com/SiruRooney/env.MRmega
+Website available: https://github.SiruRooney.io/env.MRmega
 
 Details available:
 
