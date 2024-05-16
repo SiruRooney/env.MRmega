@@ -14,7 +14,7 @@ output: github_document
 
 This is an R package for performing environment-adjusted MR-MEGA analysis aggregating all involved GWAS data. 
 
-Website available: https://github.SiruRooney.io/env.MRmega
+Website available: https://sirurooney.github.io/env.MRmega
 
 Details available:
 
