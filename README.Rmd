@@ -25,7 +25,7 @@ Details available:
 
 
 ## System requirements
-env.MRmega could be installed with ease on versions of R > 4.3.0.
+Our R package env.MRmega could be installed with ease on versions of R > 4.3.0. Installation of env.MRmega time takes less than 1 minute.
 
 
 ## Installation
