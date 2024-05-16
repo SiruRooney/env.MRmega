@@ -1,0 +1,32 @@
+Package: env.MRmega
+Type: Package
+Title: Environment-adjusted Meta-Regression of Multi-Ancestry Genetic Association
+Version: 0.1.1
+Authors@R: c(person(given = "Siru", family = "Wang", role = c("aut", "cre"), email = "sw2077@cam.ac.uk", comment=c(ORCID="0000-0001-8630-8337")),
+      person(given = "Jennifer", family = "Asimit", role = "aut", email = "ja628@cam.ac.uk"),
+       person(given = "Andrew", family = "Morris",middle = "P", role = "aut", email = "andrew.morris-5@manchester.ac.uk"))
+Maintainer: Siru Wang <sw2077@cam.ac.uk>
+Description: Based on the meta-regression model framework, we develop an environment-adjusted meta-regression of GWAS, making use of summary statistics from each cohort, together with cohort-specific environmental exposure information. This will allow us to identify genetic variants that are associated with each trait, across cohorts, while adjusting for differing environmental exposures between cohorts. 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    data.table,
+    doMC,
+    doParallel,
+    dplyr,
+    foreach,
+    iterators,
+    parallel,
+    R.utils,
+    Rdpack
+RdMacros: Rdpack
+RoxygenNote: 7.3.1
+URL: https://github.com/SiruRooney/env.MRmega
+BugReports: https://github.com/SiruRooney/env.MRmega/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Depends: 
+    R (>= 4.3.0)

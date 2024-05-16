@@ -1,0 +1,4 @@
+load("/Volumes/Mac/mr-mega-r/env.MRmega/data/afr.gwas.rda")
+afr.gwas
+load("/Volumes/Mac/mr-mega-r/env.MRmega/data/gwas_input.rda")
+gwas_input

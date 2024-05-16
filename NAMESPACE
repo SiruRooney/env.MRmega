@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+export(readInputfile,MR_mega_normalize, MR_mega_env_lrw,lr_env_w,sel_MafChrPos,MR_mega_prep)
+import(doMC,doParallel,dplyr,iterators,parallel,foreach)
+importFrom(data.table,fread,fwrite)
+importFrom(stats, complete.cases, lm, pchisq)
+importFrom(utils, head, write.table)
+importFrom(Rdpack,reprompt)
