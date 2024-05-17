@@ -54,6 +54,9 @@
     </li>
   </ul>
 </li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
@@ -248,9 +251,88 @@ function to aggregate several GWAS files into a list.</p>
 <span><span class="va">out</span><span class="op">&lt;-</span><span class="fu"><a href="../reference/readInputfile.html">readInputfile</a></span><span class="op">(</span><span class="va">data_name</span>,qt<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "i in filesize 1"</span></span>
 <span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_acb_EGL20.txt"</span></span>
-<span><span class="co">#&gt; Error: File '~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_acb_EGL20.txt' does not exist or is non-readable. getwd()=='/Users/wangsiru/Documents/Rpackages/env.MRmega/vignettes'</span></span>
+<span><span class="co">#&gt; [1] "i in filesize 2"</span></span>
+<span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_asw_EGL20.txt"</span></span>
+<span><span class="co">#&gt; [1] "i in filesize 3"</span></span>
+<span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_esn_EGL20.txt"</span></span>
+<span><span class="co">#&gt; [1] "i in filesize 4"</span></span>
+<span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_gwd_EGL20.txt"</span></span>
+<span><span class="co">#&gt; [1] "i in filesize 5"</span></span>
+<span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_lwk_EGL20.txt"</span></span>
+<span><span class="co">#&gt; [1] "i in filesize 6"</span></span>
+<span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_msl_EGL20.txt"</span></span>
+<span><span class="co">#&gt; [1] "i in filesize 7"</span></span>
+<span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_yri_EGL20.txt"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="va">out</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">2</span><span class="op">)</span><span class="op">}</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Error in eval(expr, envir, enclos): object 'out' not found</span></span></code></pre></div>
+<span><span class="co">#&gt; $Pop1</span></span>
+<span><span class="co">#&gt;     MARKERNAME CHROMOSOME POSITION     EA    NEA    EAF      BETA       SE</span></span>
+<span><span class="co">#&gt;         &lt;char&gt;      &lt;int&gt;    &lt;int&gt; &lt;char&gt; &lt;char&gt;  &lt;num&gt;     &lt;num&gt;    &lt;num&gt;</span></span>
+<span><span class="co">#&gt; 1:  rs10429359          8 72918699      C      G 0.3646 -0.000422 0.010527</span></span>
+<span><span class="co">#&gt; 2: rs115995911         10 73624098      T      C 0.1042 -0.001478 0.016606</span></span>
+<span><span class="co">#&gt;        N</span></span>
+<span><span class="co">#&gt;    &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1:  4000</span></span>
+<span><span class="co">#&gt; 2:  4000</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $Pop2</span></span>
+<span><span class="co">#&gt;     MARKERNAME CHROMOSOME POSITION     EA    NEA    EAF      BETA       SE</span></span>
+<span><span class="co">#&gt;         &lt;char&gt;      &lt;int&gt;    &lt;int&gt; &lt;char&gt; &lt;char&gt;  &lt;num&gt;     &lt;num&gt;    &lt;num&gt;</span></span>
+<span><span class="co">#&gt; 1:  rs10429359          8 72918699      C      G 0.3115 -0.018387 0.010747</span></span>
+<span><span class="co">#&gt; 2: rs115995911         10 73624098      T      C 0.1885 -0.005697 0.012782</span></span>
+<span><span class="co">#&gt;        N</span></span>
+<span><span class="co">#&gt;    &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1:  4000</span></span>
+<span><span class="co">#&gt; 2:  4000</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $Pop3</span></span>
+<span><span class="co">#&gt;     MARKERNAME CHROMOSOME POSITION     EA    NEA    EAF      BETA       SE</span></span>
+<span><span class="co">#&gt;         &lt;char&gt;      &lt;int&gt;    &lt;int&gt; &lt;char&gt; &lt;char&gt;  &lt;num&gt;     &lt;num&gt;    &lt;num&gt;</span></span>
+<span><span class="co">#&gt; 1:  rs10429359          8 72918699      C      G 0.3283  0.000632 0.010673</span></span>
+<span><span class="co">#&gt; 2: rs115995911         10 73624098      T      C 0.1515 -0.023159 0.014028</span></span>
+<span><span class="co">#&gt;        N</span></span>
+<span><span class="co">#&gt;    &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1:  4000</span></span>
+<span><span class="co">#&gt; 2:  4000</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $Pop4</span></span>
+<span><span class="co">#&gt;     MARKERNAME CHROMOSOME POSITION     EA    NEA    EAF      BETA       SE</span></span>
+<span><span class="co">#&gt;         &lt;char&gt;      &lt;int&gt;    &lt;int&gt; &lt;char&gt; &lt;char&gt;  &lt;num&gt;     &lt;num&gt;    &lt;num&gt;</span></span>
+<span><span class="co">#&gt; 1:  rs10429359          8 72918699      C      G 0.3805  0.012997 0.010300</span></span>
+<span><span class="co">#&gt; 2: rs115995911         10 73624098      T      C 0.2212 -0.026722 0.012143</span></span>
+<span><span class="co">#&gt;        N</span></span>
+<span><span class="co">#&gt;    &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1:  4000</span></span>
+<span><span class="co">#&gt; 2:  4000</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $Pop5</span></span>
+<span><span class="co">#&gt;     MARKERNAME CHROMOSOME POSITION     EA    NEA     EAF     BETA       SE</span></span>
+<span><span class="co">#&gt;         &lt;char&gt;      &lt;int&gt;    &lt;int&gt; &lt;char&gt; &lt;char&gt;   &lt;num&gt;    &lt;num&gt;    &lt;num&gt;</span></span>
+<span><span class="co">#&gt; 1:  rs10429359          8 72918699      C      G 0.30810 0.021422 0.010870</span></span>
+<span><span class="co">#&gt; 2: rs115995911         10 73624098      T      C 0.07071 0.000319 0.020456</span></span>
+<span><span class="co">#&gt;        N</span></span>
+<span><span class="co">#&gt;    &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1:  4000</span></span>
+<span><span class="co">#&gt; 2:  4000</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $Pop6</span></span>
+<span><span class="co">#&gt;     MARKERNAME CHROMOSOME POSITION     EA    NEA    EAF      BETA       SE</span></span>
+<span><span class="co">#&gt;         &lt;char&gt;      &lt;int&gt;    &lt;int&gt; &lt;char&gt; &lt;char&gt;  &lt;num&gt;     &lt;num&gt;    &lt;num&gt;</span></span>
+<span><span class="co">#&gt; 1:  rs10429359          8 72918699      C      G 0.3118 -0.011872 0.010834</span></span>
+<span><span class="co">#&gt; 2: rs115995911         10 73624098      T      C 0.1647  0.015265 0.013528</span></span>
+<span><span class="co">#&gt;        N</span></span>
+<span><span class="co">#&gt;    &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1:  4000</span></span>
+<span><span class="co">#&gt; 2:  4000</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $Pop7</span></span>
+<span><span class="co">#&gt;     MARKERNAME CHROMOSOME POSITION     EA    NEA    EAF      BETA       SE</span></span>
+<span><span class="co">#&gt;         &lt;char&gt;      &lt;int&gt;    &lt;int&gt; &lt;char&gt; &lt;char&gt;  &lt;num&gt;     &lt;num&gt;    &lt;num&gt;</span></span>
+<span><span class="co">#&gt; 1:  rs10429359          8 72918699      C      G 0.3935  0.016963 0.010342</span></span>
+<span><span class="co">#&gt; 2: rs115995911         10 73624098      T      C 0.1898 -0.009583 0.012878</span></span>
+<span><span class="co">#&gt;        N</span></span>
+<span><span class="co">#&gt;    &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1:  4000</span></span>
+<span><span class="co">#&gt; 2:  4000</span></span></code></pre></div>
 <p><span style="color: #0000FF;">Note</span>:</p>
 <ul>
 <li>For convenience of simplicity, we do not take account of sex
@@ -282,7 +364,9 @@ male cohorts.</li>
 <h3 id="packages-installation-and-loading">Packages installation and loading<a class="anchor" aria-label="anchor" href="#packages-installation-and-loading"></a>
 </h3>
 <p>First, we load the packages necessary for analysis, and check the
-version of each package.</p>
+version of each package.The provided demo runs in less than 2 seconds
+including preparation and execution of both MR-MEGA/environment-adjusted
+MR-MEGA procedures.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">#cran</span></span>
 <span><span class="va">cran.pkgs</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'data.table'</span>, <span class="st">'doMC'</span>, <span class="st">'doParallel'</span>,<span class="st">'dplyr'</span>,<span class="st">'iterators'</span>,<span class="st">'parallel'</span>,<span class="st">'R.utils'</span><span class="op">)</span></span>
@@ -321,6 +405,8 @@ consisting of thousands of genetic variants across 23 chromosomes.</p>
 vector containing all population file names and the corresponding
 locations. Then you need to point out the location of the output, named
 by <code>batch_loc</code>.</p>
+<p><span style="color: #0000FF;">Note</span>: The data are pre-loaded
+and these lines should not be run in the demo.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">data_name</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"~/MR_MEGA/MR_MEGA_ENV_gitdta/g1000_afr_acb/g1000_afr_acb.inf"</span>,</span>
 <span>            <span class="st">"~/MR_MEGA/MR_MEGA_ENV_gitdta/g1000_afr_asw/g1000_afr_asw.inf"</span>,</span>
@@ -366,12 +452,14 @@ performing them in parallel.</p></li>
 </ul>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">################env_adjusted MR-MEGA#####################</span></span>
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span><span class="st">"Preparation for performing MR-MEGA/env-MR-MEGA approach"</span><span class="op">)</span></span>
 <span><span class="va">gwas_input</span><span class="op">&lt;-</span><span class="fu"><a href="../reference/MR_mega_prep.html">MR_mega_prep</a></span><span class="op">(</span>sum_stat_pop<span class="op">=</span><span class="va">afr.gwas</span>,n_cohort<span class="op">=</span><span class="fl">7</span>,usefor<span class="op">=</span><span class="st">"env-mr-mega"</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,pcCount<span class="op">=</span><span class="fl">2</span>,calpc<span class="op">=</span><span class="cn">FALSE</span>,envCount<span class="op">=</span><span class="fl">1</span>,ncores<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "Parallel running and use2 cores."</span></span>
 <span><span class="co">#&gt; [1] "All GWAS are aligned to the same reference allele"</span></span>
 <span><span class="co">#&gt; [1] "Set the ancestry 1 as the reference allele"</span></span>
 <span><span class="co">#&gt; There are  50 different SNPs among 7 populations</span></span>
-<span></span>
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Preparation for performing MR-MEGA/env-MR-MEGA approach: 0.324 sec elapsed</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "beta_pop"          "invse2_pop"        "marker_inf_pop"   </span></span>
 <span><span class="co">#&gt; [4] "cohort_count_filt" "sel_gene"</span></span>
@@ -548,8 +636,11 @@ must contain <code>env</code> object.</p>
 <span><span class="co">#&gt; [1] "beta_pop"          "invse2_pop"        "marker_inf_pop"   </span></span>
 <span><span class="co">#&gt; [4] "cohort_count_filt" "sel_gene"          "pcs"              </span></span>
 <span><span class="co">#&gt; [7] "env"</span></span>
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span><span class="st">"Perform MR-MEGA approach"</span><span class="op">)</span></span>
 <span><span class="va">out</span><span class="op">=</span><span class="fu"><a href="../reference/MR_mega_lrw.html">MR_mega_lrw</a></span><span class="op">(</span><span class="va">gwas_input</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,ncores<span class="op">=</span><span class="fl">2</span>,pcCount<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span>
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Perform MR-MEGA approach: 0.307 sec elapsed</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out</span>,<span class="fl">4</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME CHROMOSOME EA NEA     N   EAF_avg      dir        beta0</span></span>
 <span><span class="co">#&gt; 1  rs10429359          8  C   G 28000 0.3426143 ?--+++-+  0.003316407</span></span>
@@ -611,8 +702,11 @@ present in all cohorts.</p></li>
 </ul>
 <p><strong>Environment-adjusted MR-mega</strong></p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">out.env</span><span class="op">=</span><span class="fu"><a href="../reference/MR_mega_env_lrw.html">MR_mega_env_lrw</a></span><span class="op">(</span><span class="va">gwas_input</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,ncores<span class="op">=</span><span class="fl">2</span>,pcCount<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span><span class="st">"Perform env-MR-MEGA approach"</span><span class="op">)</span></span>
+<span><span class="va">out.env</span><span class="op">=</span><span class="fu"><a href="../reference/MR_mega_env_lrw.html">MR_mega_env_lrw</a></span><span class="op">(</span><span class="va">gwas_input</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,ncores<span class="op">=</span><span class="fl">2</span>,pcCount<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span>
+<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Perform env-MR-MEGA approach: 0.363 sec elapsed</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out.env</span>,<span class="fl">4</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME CHROMOSOME EA NEA     N   EAF_avg      dir        beta0</span></span>
 <span><span class="co">#&gt; 1  rs10429359          8  C   G 28000 0.3426143 ?--+++-+ -0.011451926</span></span>

@@ -1,4 +1,6 @@
-
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -19,13 +21,13 @@ knitr::opts_chunk$set(
 
 This is an R package for performing environment-adjusted MR-MEGA analysis aggregating all involved GWAS data. 
 
-Website available: https://SiruRooney.github.io/env.MRmega
+Website available: <https://SiruRooney.github.io/env.MRmega/>
 
 Details available:
 
 
 ## System requirements
-Our R package env.MRmega could be installed with ease on versions of R > 4.3.0. Installation of env.MRmega time takes less than 1 minute.
+env.MRmega could be installed with ease on versions of R > 4.3.0.
 
 
 ## Installation

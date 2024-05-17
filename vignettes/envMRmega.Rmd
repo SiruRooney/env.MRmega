@@ -103,7 +103,7 @@ For the environment-adjusted meta-regression analysis, besides the above mention
 
 # Simulation example
 ## Packages installation and loading
-First, we load the packages necessary for analysis, and check the version of each package.
+First, we load the packages necessary for analysis, and check the version of each package.The provided demo runs in less than 2 seconds including preparation and execution of both MR-MEGA/environment-adjusted MR-MEGA procedures.
 ```{r,eval=FALSE}
 #cran
 cran.pkgs <- c('data.table', 'doMC', 'doParallel','dplyr','iterators','parallel','R.utils')
@@ -124,6 +124,8 @@ Before fitting the environment-adjusted meta-regression model and the original m
 The function used for calculating PCs would be built in the function `MR_mega_prep` which is used for preparing inputted data in the environment-adjusted meta-regression and the original meta-regression models. For convenience of PC calculation independently, we extracted the function used for calculating PCs  `MR_mega_MDS` out. Since the simulated GWAS data contain 50 genetic variants only, we would derive PCs from the subset of genetic variants with MAF>5\% in the whole of the 7 GWAS raw files, each file consisting of thousands of genetic variants across 23 chromosomes.
 
 For running `MR_mega_MDS` function, you can create a vector containing all population file names and the corresponding locations. Then you need to point out the location of the output, named by `batch_loc`.
+
+`r colorize("Note", "blue")`: The data are pre-loaded and these lines should not be run in the demo.
 ```{r,eval=FALSE}
 data_name=c("~/MR_MEGA/MR_MEGA_ENV_gitdta/g1000_afr_acb/g1000_afr_acb.inf",
             "~/MR_MEGA/MR_MEGA_ENV_gitdta/g1000_afr_asw/g1000_afr_asw.inf",
@@ -153,8 +155,9 @@ Based on the 7 simulated GWAS files, we categorized `BETA` and `SE` into two obj
 
 ```{r}
 ################env_adjusted MR-MEGA#####################
+tictoc::tic("Preparation for performing MR-MEGA/env-MR-MEGA approach")
 gwas_input<-MR_mega_prep(sum_stat_pop=afr.gwas,n_cohort=7,usefor="env-mr-mega",qt=TRUE,pcCount=2,calpc=FALSE,envCount=1,ncores=2)
-
+tictoc::toc()
 names(gwas_input)
 
 head(gwas_input$beta_pop,2)
@@ -216,7 +219,9 @@ After constructing a list of the inputted GWAS data `gwas_input` obtained from `
 
 ```{r,error=TRUE}
 names(gwas_input)
+tictoc::tic("Perform MR-MEGA approach")
 out=MR_mega_lrw(gwas_input,qt=TRUE,ncores=2,pcCount=2)
+tictoc::toc()
 head(out,4)
 ```
 
@@ -257,7 +262,9 @@ For the original MR-MEGA approach, results contain following columns:
 **Environment-adjusted MR-mega**
 
 ```{r,error=TRUE}
+tictoc::tic("Perform env-MR-MEGA approach")
 out.env=MR_mega_env_lrw(gwas_input,qt=TRUE,ncores=2,pcCount=2)
+tictoc::toc()
 head(out.env,4)
 ```
 For the environment-adjusted MR-MEGA approach, results contain tests which are different from that in the original MR-MEGA approach. Details are shown as follows:

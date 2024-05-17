@@ -19,6 +19,7 @@ Imports:
     iterators,
     parallel,
     R.utils,
+    tictoc,
     Rdpack
 RdMacros: Rdpack
 RoxygenNote: 7.3.1
