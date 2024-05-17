@@ -459,7 +459,7 @@ performing them in parallel.</p></li>
 <span><span class="co">#&gt; [1] "Set the ancestry 1 as the reference allele"</span></span>
 <span><span class="co">#&gt; There are  50 different SNPs among 7 populations</span></span>
 <span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Preparation for performing MR-MEGA/env-MR-MEGA approach: 0.324 sec elapsed</span></span>
+<span><span class="co">#&gt; Preparation for performing MR-MEGA/env-MR-MEGA approach: 0.335 sec elapsed</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "beta_pop"          "invse2_pop"        "marker_inf_pop"   </span></span>
 <span><span class="co">#&gt; [4] "cohort_count_filt" "sel_gene"</span></span>
@@ -640,7 +640,7 @@ must contain <code>env</code> object.</p>
 <span><span class="va">out</span><span class="op">=</span><span class="fu"><a href="../reference/MR_mega_lrw.html">MR_mega_lrw</a></span><span class="op">(</span><span class="va">gwas_input</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,ncores<span class="op">=</span><span class="fl">2</span>,pcCount<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span>
 <span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Perform MR-MEGA approach: 0.307 sec elapsed</span></span>
+<span><span class="co">#&gt; Perform MR-MEGA approach: 0.296 sec elapsed</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out</span>,<span class="fl">4</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME CHROMOSOME EA NEA     N   EAF_avg      dir        beta0</span></span>
 <span><span class="co">#&gt; 1  rs10429359          8  C   G 28000 0.3426143 ?--+++-+  0.003316407</span></span>
@@ -706,7 +706,7 @@ present in all cohorts.</p></li>
 <span><span class="va">out.env</span><span class="op">=</span><span class="fu"><a href="../reference/MR_mega_env_lrw.html">MR_mega_env_lrw</a></span><span class="op">(</span><span class="va">gwas_input</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,ncores<span class="op">=</span><span class="fl">2</span>,pcCount<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span>
 <span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Perform env-MR-MEGA approach: 0.363 sec elapsed</span></span>
+<span><span class="co">#&gt; Perform env-MR-MEGA approach: 0.334 sec elapsed</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out.env</span>,<span class="fl">4</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME CHROMOSOME EA NEA     N   EAF_avg      dir        beta0</span></span>
 <span><span class="co">#&gt; 1  rs10429359          8  C   G 28000 0.3426143 ?--+++-+ -0.011451926</span></span>
