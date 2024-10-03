@@ -83,7 +83,7 @@
                   <a class="author_email" href="mailto:#"></a><a href="mailto:sw2077@cam.ac.uk" class="email">sw2077@cam.ac.uk</a>
       
                   
-            <h4 data-toc-skip class="date">17 May, 2024</h4>
+            <h4 data-toc-skip class="date">03 October, 2024</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/SiruRooney/env.MRmega/blob/HEAD/vignettes/envMRmega.Rmd" class="external-link"><code>vignettes/envMRmega.Rmd</code></a></small>
       <div class="hidden name"><code>envMRmega.Rmd</code></div>
@@ -163,8 +163,9 @@ details of 7 simulated GWAS data are saved in <code>afr.gwas</code>
 object as a list.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://github.com/SiruRooney/env.MRmega" class="external-link">env.MRmega</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; Loading required package: env.MRmega</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="va">afr.gwas</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">2</span><span class="op">)</span><span class="op">}</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Loading required package: env.MRmega</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="va">afr.gwas</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">2</span><span class="op">)</span><span class="op">}</span><span class="op">)</span></span>
 <span><span class="co">#&gt; $acb</span></span>
 <span><span class="co">#&gt;     MARKERNAME     N    EAF      BETA       SE CHROMOSOME POSITION     EA</span></span>
 <span><span class="co">#&gt;         &lt;char&gt; &lt;int&gt;  &lt;num&gt;     &lt;num&gt;    &lt;num&gt;      &lt;int&gt;    &lt;int&gt; &lt;char&gt;</span></span>
@@ -239,7 +240,7 @@ file (“.txt”), even a compressed file (“.txt.gz”), containing tens of
 thousands of genetic variants information. We could create a input file
 which contains all study files and use <code>readInputfile</code>
 function to aggregate several GWAS files into a list.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">data_name</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_acb_EGL20.txt"</span>,</span>
 <span>            <span class="st">"~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_asw_EGL20.txt"</span>,</span>
 <span>            <span class="st">"~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_esn_EGL20.txt"</span>,</span>
@@ -262,8 +263,9 @@ function to aggregate several GWAS files into a list.</p>
 <span><span class="co">#&gt; [1] "i in filesize 6"</span></span>
 <span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_msl_EGL20.txt"</span></span>
 <span><span class="co">#&gt; [1] "i in filesize 7"</span></span>
-<span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_yri_EGL20.txt"</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="va">out</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">2</span><span class="op">)</span><span class="op">}</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "Reading file ~/Desktop/mr-mega-r/MR_MEGA_ENV_git/g1000_afr_7gwas_git/afr_yri_EGL20.txt"</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="va">out</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">x</span>,<span class="fl">2</span><span class="op">)</span><span class="op">}</span><span class="op">)</span></span>
 <span><span class="co">#&gt; $Pop1</span></span>
 <span><span class="co">#&gt;     MARKERNAME CHROMOSOME POSITION     EA    NEA    EAF      BETA       SE</span></span>
 <span><span class="co">#&gt;         &lt;char&gt;      &lt;int&gt;    &lt;int&gt; &lt;char&gt; &lt;char&gt;  &lt;num&gt;     &lt;num&gt;    &lt;num&gt;</span></span>
@@ -367,7 +369,7 @@ male cohorts.</li>
 version of each package.The provided demo runs in less than 2 seconds
 including preparation and execution of both MR-MEGA/environment-adjusted
 MR-MEGA procedures.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">#cran</span></span>
 <span><span class="va">cran.pkgs</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'data.table'</span>, <span class="st">'doMC'</span>, <span class="st">'doParallel'</span>,<span class="st">'dplyr'</span>,<span class="st">'iterators'</span>,<span class="st">'parallel'</span>,<span class="st">'R.utils'</span><span class="op">)</span></span>
 <span></span>
@@ -385,7 +387,19 @@ default=2. Specifically, we used a subset of genetic variants with
 MAF&gt;5% in all population files to derive Euclidean distances matrix.
 Then the two axes of genetic variation were derived from the
 multi-dimensional scaling of the distance matrix in the corresponding
-reference panel.</p>
+reference panel. Figure 1 shows that the first two axes of genetic
+variation from multi-dimensional scaling of the Euclidean distance
+matrix between 7 populations are sufficient to separate population
+groups from different regions of Africa.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span></span>
+<span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">'./figure/pcs_sim1.png'</span><span class="op">)</span></span></code></pre></div>
+<div class="figure" style="text-align: center">
+<img src="figure/pcs_sim1.png" alt="Figure 1. Axes of genetic variation separating seven populations from African ancestry" width="100%"><p class="caption">
+Figure 1. Axes of genetic variation separating seven populations from
+African ancestry
+</p>
+</div>
 <p><span style="color: #0000FF;">Note</span>: the number of axes of
 genetic variation and the number of environmental covariates would
 depend on the diversity of cohorts, but the limitation of the number of
@@ -407,7 +421,7 @@ locations. Then you need to point out the location of the output, named
 by <code>batch_loc</code>.</p>
 <p><span style="color: #0000FF;">Note</span>: The data are pre-loaded
 and these lines should not be run in the demo.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">data_name</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"~/MR_MEGA/MR_MEGA_ENV_gitdta/g1000_afr_acb/g1000_afr_acb.inf"</span>,</span>
 <span>            <span class="st">"~/MR_MEGA/MR_MEGA_ENV_gitdta/g1000_afr_asw/g1000_afr_asw.inf"</span>,</span>
 <span>            <span class="st">"~/MR_MEGA/MR_MEGA_ENV_gitdta/g1000_afr_esn/g1000_afr_esn.inf"</span>,</span>
@@ -422,7 +436,7 @@ two files, one file containing axes of genetic variants and another
 containing multi-dimensional scaling (MDS) of Euclidean distances
 matrix. After inputting 7 GWAS files, we get the PCs shown as
 follows.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">pcs</span></span>
 <span><span class="co">#&gt;            pc1          pc2</span></span>
 <span><span class="co">#&gt;          &lt;num&gt;        &lt;num&gt;</span></span>
@@ -450,40 +464,47 @@ environment-adjusted MR-MEGA approach and the original MR-MEGA approach,
 we could input these batches into the associated functions and
 performing them in parallel.</p></li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">################env_adjusted MR-MEGA#####################</span></span>
 <span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span><span class="st">"Preparation for performing MR-MEGA/env-MR-MEGA approach"</span><span class="op">)</span></span>
 <span><span class="va">gwas_input</span><span class="op">&lt;-</span><span class="fu"><a href="../reference/MR_mega_prep.html">MR_mega_prep</a></span><span class="op">(</span>sum_stat_pop<span class="op">=</span><span class="va">afr.gwas</span>,n_cohort<span class="op">=</span><span class="fl">7</span>,usefor<span class="op">=</span><span class="st">"env-mr-mega"</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,pcCount<span class="op">=</span><span class="fl">2</span>,calpc<span class="op">=</span><span class="cn">FALSE</span>,envCount<span class="op">=</span><span class="fl">1</span>,ncores<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "Parallel running and use2 cores."</span></span>
 <span><span class="co">#&gt; [1] "All GWAS are aligned to the same reference allele"</span></span>
 <span><span class="co">#&gt; [1] "Set the ancestry 1 as the reference allele"</span></span>
-<span><span class="co">#&gt; There are  50 different SNPs among 7 populations</span></span>
-<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Preparation for performing MR-MEGA/env-MR-MEGA approach: 0.335 sec elapsed</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">)</span></span>
+<span><span class="co">#&gt; There are  50 different SNPs among 7 populations</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Preparation for performing MR-MEGA/env-MR-MEGA approach: 0.575 sec elapsed</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "beta_pop"          "invse2_pop"        "marker_inf_pop"   </span></span>
-<span><span class="co">#&gt; [4] "cohort_count_filt" "sel_gene"</span></span>
-<span></span>
+<span><span class="co">#&gt; [4] "cohort_count_filt" "sel_gene"</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">$</span><span class="va">beta_pop</span>,<span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME      Pop1      Pop2      Pop3      Pop4     Pop5      Pop6</span></span>
 <span><span class="co">#&gt; 1  rs10429359 -0.000422 -0.018387  0.000632  0.012997 0.021422 -0.011872</span></span>
 <span><span class="co">#&gt; 2 rs115995911 -0.001478 -0.005697 -0.023159 -0.026722 0.000319  0.015265</span></span>
 <span><span class="co">#&gt;        Pop7</span></span>
 <span><span class="co">#&gt; 1  0.016963</span></span>
-<span><span class="co">#&gt; 2 -0.009583</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">$</span><span class="va">invse2_pop</span>,<span class="fl">2</span><span class="op">)</span></span>
+<span><span class="co">#&gt; 2 -0.009583</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">$</span><span class="va">invse2_pop</span>,<span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME Pop1 Pop2 Pop3 Pop4 Pop5 Pop6 Pop7</span></span>
 <span><span class="co">#&gt; 1  rs10429359 9024 8658 8779 9426 8463 8520 9350</span></span>
-<span><span class="co">#&gt; 2 rs115995911 3626 6121 5082 6782 2390 5464 6030</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">$</span><span class="va">marker_inf_pop</span>,<span class="fl">2</span><span class="op">)</span></span>
+<span><span class="co">#&gt; 2 rs115995911 3626 6121 5082 6782 2390 5464 6030</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">$</span><span class="va">marker_inf_pop</span>,<span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME CHROMOSOME EA NEA     N   EAF_avg      dir</span></span>
 <span><span class="co">#&gt; 1  rs10429359          8  C   G 28000 0.3426143 ?--+++-+</span></span>
-<span><span class="co">#&gt; 2 rs115995911         10  T   C 28000 0.1558014 ?----++-</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">$</span><span class="va">cohort_count_filt</span>,<span class="fl">2</span><span class="op">)</span></span>
+<span><span class="co">#&gt; 2 rs115995911         10  T   C 28000 0.1558014 ?----++-</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">$</span><span class="va">cohort_count_filt</span>,<span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME Count_cohorts</span></span>
 <span><span class="co">#&gt; 1  rs10429359             7</span></span>
-<span><span class="co">#&gt; 2 rs115995911             7</span></span>
-<span><span class="va">gwas_input</span><span class="op">$</span><span class="va">sel_gene</span></span>
+<span><span class="co">#&gt; 2 rs115995911             7</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">gwas_input</span><span class="op">$</span><span class="va">sel_gene</span></span>
 <span><span class="co">#&gt;    MARKERNAME beta0 se0 beta1 se1 beta2 se2 beta3 se3 beta4 se4 beta5 se5 beta6</span></span>
 <span><span class="co">#&gt; 1 rs190897515    NA  NA    NA  NA    NA  NA    NA  NA    NA  NA    NA  NA    NA</span></span>
 <span><span class="co">#&gt; 2 rs577430535    NA  NA    NA  NA    NA  NA    NA  NA    NA  NA    NA  NA    NA</span></span>
@@ -503,14 +524,16 @@ performing them in parallel.</p></li>
 <span><span class="co">#&gt; 1 SmallcohortCount</span></span>
 <span><span class="co">#&gt; 2 SmallcohortCount</span></span>
 <span><span class="co">#&gt; 3 SmallcohortCount</span></span>
-<span><span class="co">#&gt; 4 SmallcohortCount</span></span>
-<span><span class="co">################MR-MEGA#####################</span></span>
+<span><span class="co">#&gt; 4 SmallcohortCount</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co">################MR-MEGA#####################</span></span>
 <span><span class="va">gwas_input</span><span class="op">&lt;-</span><span class="fu"><a href="../reference/MR_mega_prep.html">MR_mega_prep</a></span><span class="op">(</span>sum_stat_pop<span class="op">=</span><span class="va">afr.gwas</span>,n_cohort<span class="op">=</span><span class="fl">7</span>,usefor<span class="op">=</span><span class="st">"mr-mega"</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,pcCount<span class="op">=</span><span class="fl">2</span>,calpc<span class="op">=</span><span class="cn">FALSE</span>,ncores<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "Parallel running and use2 cores."</span></span>
 <span><span class="co">#&gt; [1] "All GWAS are aligned to the same reference allele"</span></span>
 <span><span class="co">#&gt; [1] "Set the ancestry 1 as the reference allele"</span></span>
-<span><span class="co">#&gt; There are  50 different SNPs among 7 populations</span></span>
-<span><span class="va">gwas_input</span><span class="op">$</span><span class="va">sel_gene</span></span>
+<span><span class="co">#&gt; There are  50 different SNPs among 7 populations</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">gwas_input</span><span class="op">$</span><span class="va">sel_gene</span></span>
 <span><span class="co">#&gt;    MARKERNAME beta0 se0 beta1 se1 beta2 se2 beta3 se3 beta4 se4</span></span>
 <span><span class="co">#&gt; 1 rs190897515    NA  NA    NA  NA    NA  NA    NA  NA    NA  NA</span></span>
 <span><span class="co">#&gt; 2 rs577430535    NA  NA    NA  NA    NA  NA    NA  NA    NA  NA</span></span>
@@ -586,7 +609,7 @@ For each environmental covariate measured in all cohorts, we construct a
 cohort-level environmental covariate by taking the mean or proportion of
 each covariate within each cohort. Here we give the smoking proportions
 across the 7 populations.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">smoke.env</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   acb asw esn gwd lwk msl yri</span></span>
 <span><span class="co">#&gt; 1   1   0   0   1   1   0   0</span></span>
@@ -594,8 +617,9 @@ across the 7 populations.</p>
 <span><span class="co">#&gt; 3   1   0   0   1   0   0   1</span></span>
 <span><span class="co">#&gt; 4   0   0   0   1   1   0   1</span></span>
 <span><span class="co">#&gt; 5   1   1   0   0   1   1   1</span></span>
-<span><span class="co">#&gt; 6   0   1   0   1   0   1   0</span></span>
-<span><span class="va">smoke.env</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/unlist.html" class="external-link">unlist</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="va">smoke.env</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>,<span class="fl">4</span><span class="op">)</span><span class="op">}</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; 6   0   1   0   1   0   1   0</span></span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">smoke.env</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/unlist.html" class="external-link">unlist</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="va">smoke.env</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>,<span class="fl">4</span><span class="op">)</span><span class="op">}</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">smoke.env</span></span>
 <span><span class="co">#&gt;    acb    asw    esn    gwd    lwk    msl    yri </span></span>
 <span><span class="co">#&gt; 0.7922 0.1750 0.2130 0.6860 0.5510 0.2015 0.7850</span></span></code></pre></div>
@@ -608,7 +632,7 @@ covariates would be added into <code>gwas_input</code> object as well.
 If we set ‘calpc=TRUE’ in <code>MR_mega_prep</code> function, the
 resulting output of <code>MR_mega_prep</code> function would comprise
 <code>pcs</code> object.</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">gwas_input</span><span class="op">$</span><span class="va">pcs</span><span class="op">=</span><span class="va">pcs</span>;</span>
 <span><span class="va">gwas_input</span><span class="op">$</span><span class="va">env</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/unlist.html" class="external-link">unlist</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="va">smoke.env</span>,<span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>,<span class="fl">4</span><span class="op">)</span><span class="op">}</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p><span style="color: #0000FF;">Note</span>:</p>
@@ -631,17 +655,20 @@ respectively.</p>
 meta-regression model, it is not required that <code>gwas_input</code>
 must contain <code>env</code> object.</p>
 <p><strong>MR-mega</strong></p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "beta_pop"          "invse2_pop"        "marker_inf_pop"   </span></span>
 <span><span class="co">#&gt; [4] "cohort_count_filt" "sel_gene"          "pcs"              </span></span>
-<span><span class="co">#&gt; [7] "env"</span></span>
-<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span><span class="st">"Perform MR-MEGA approach"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [7] "env"</span></span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span><span class="st">"Perform MR-MEGA approach"</span><span class="op">)</span></span>
 <span><span class="va">out</span><span class="op">=</span><span class="fu"><a href="../reference/MR_mega_lrw.html">MR_mega_lrw</a></span><span class="op">(</span><span class="va">gwas_input</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,ncores<span class="op">=</span><span class="fl">2</span>,pcCount<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span>
-<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Perform MR-MEGA approach: 0.296 sec elapsed</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out</span>,<span class="fl">4</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Perform MR-MEGA approach: 0.315 sec elapsed</span></span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out</span>,<span class="fl">4</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME CHROMOSOME EA NEA     N   EAF_avg      dir        beta0</span></span>
 <span><span class="co">#&gt; 1  rs10429359          8  C   G 28000 0.3426143 ?--+++-+  0.003316407</span></span>
 <span><span class="co">#&gt; 2 rs115995911         10  T   C 28000 0.1558014 ?----++- -0.008618561</span></span>
@@ -701,13 +728,15 @@ only.</p></li>
 present in all cohorts.</p></li>
 </ul>
 <p><strong>Environment-adjusted MR-mega</strong></p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">tic</a></span><span class="op">(</span><span class="st">"Perform env-MR-MEGA approach"</span><span class="op">)</span></span>
 <span><span class="va">out.env</span><span class="op">=</span><span class="fu"><a href="../reference/MR_mega_env_lrw.html">MR_mega_env_lrw</a></span><span class="op">(</span><span class="va">gwas_input</span>,qt<span class="op">=</span><span class="cn">TRUE</span>,ncores<span class="op">=</span><span class="fl">2</span>,pcCount<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span>
-<span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Perform env-MR-MEGA approach: 0.334 sec elapsed</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out.env</span>,<span class="fl">4</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Perform env-MR-MEGA approach: 0.35 sec elapsed</span></span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out.env</span>,<span class="fl">4</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME CHROMOSOME EA NEA     N   EAF_avg      dir        beta0</span></span>
 <span><span class="co">#&gt; 1  rs10429359          8  C   G 28000 0.3426143 ?--+++-+ -0.011451926</span></span>
 <span><span class="co">#&gt; 2 rs115995911         10  T   C 28000 0.1558014 ?----++- -0.001497157</span></span>

@@ -118,6 +118,13 @@ sapply(cran.pkgs, require, character.only = TRUE)
 **Calculate PCs**
 
 Before fitting the environment-adjusted meta-regression model and the original meta-regression model [@magi2017trans], we need to specify the number of PCs (`r colorize("T", "blue")`), default=2. Specifically, we used a subset of genetic variants with MAF>5\% in all population files to derive Euclidean distances matrix. Then the two axes of genetic variation were derived from the multi-dimensional scaling of the distance matrix in the corresponding reference panel. 
+Figure 1 shows that the first two axes of genetic variation from multi-dimensional scaling of the Euclidean distance matrix between 7 populations are sufficient to separate population groups from different regions of Africa. 
+
+```{r,out.width='100%',fig.align='center',fig.cap="Figure 1. Axes of genetic variation separating seven populations from African ancestry"}
+
+knitr::include_graphics('./figure/pcs_sim1.png')
+
+```
 
 `r colorize("Note", "blue")`: the number of axes of genetic variation and the number of environmental covariates would depend on the diversity of cohorts, but the limitation of the number of axes of genetic variation (`r colorize("T", "blue")`) and the number of environmental covariates (`r colorize("S", "blue")`) should be less than the number of cohorts (`r colorize("K", "blue")`) - 2. 
 
