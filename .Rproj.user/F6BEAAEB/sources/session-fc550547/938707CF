@@ -1,0 +1,26 @@
+{
+    "id": "938707CF",
+    "path": "/Volumes/Mac/mr-mega-r/env.MRmega/R/Preprocedure_sum_stat.R",
+    "project_path": "R/Preprocedure_sum_stat.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1691349442389.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "240,101",
+        "scrollLine": "237"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1691349451,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1691349451974,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,28 @@
+{
+    "id": "53836EE1",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1691355252447.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "id": "a7ee24808c4146c0bfbca2d7e63d01df",
+        "name": "gwas_input",
+        "title": "gwas_input",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 0,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1691355252447,
+    "read_only": false,
+    "read_only_alternatives": []
+}
