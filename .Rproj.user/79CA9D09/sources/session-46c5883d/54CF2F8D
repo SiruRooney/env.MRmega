@@ -1,0 +1,32 @@
+{
+    "id": "54CF2F8D",
+    "path": "~/Desktop/mr-mega-r/env.MRmega/vignettes/envMRmega.Rmd",
+    "project_path": "vignettes/envMRmega.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1727968654884.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "120,21",
+        "scrollLine": "0",
+        "rmdVisualMode": "false",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "290:89",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "0",
+        "working_dir": "default"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1727969185,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1727969185638,
+    "read_only": false,
+    "read_only_alternatives": []
+}

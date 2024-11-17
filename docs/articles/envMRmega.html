@@ -83,7 +83,7 @@
                   <a class="author_email" href="mailto:#"></a><a href="mailto:sw2077@cam.ac.uk" class="email">sw2077@cam.ac.uk</a>
       
                   
-            <h4 data-toc-skip class="date">15 November, 2024</h4>
+            <h4 data-toc-skip class="date">17 November, 2024</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/SiruRooney/env.MRmega/blob/HEAD/vignettes/envMRmega.Rmd" class="external-link"><code>vignettes/envMRmega.Rmd</code></a></small>
       <div class="hidden name"><code>envMRmega.Rmd</code></div>
@@ -474,7 +474,7 @@ performing them in parallel.</p></li>
 <span><span class="co">#&gt; There are  50 different SNPs among 7 populations</span></span></code></pre></div>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Preparation for performing MR-MEGA/env-MR-MEGA approach: 0.386 sec elapsed</span></span></code></pre></div>
+<span><span class="co">#&gt; Preparation for performing MR-MEGA/env-MR-MEGA approach: 0.401 sec elapsed</span></span></code></pre></div>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">gwas_input</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "beta_pop"          "invse2_pop"        "marker_inf_pop"   </span></span>
@@ -666,7 +666,7 @@ must contain <code>env</code> object.</p>
 <span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span></code></pre></div>
 <div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Perform MR-MEGA approach: 0.285 sec elapsed</span></span></code></pre></div>
+<span><span class="co">#&gt; Perform MR-MEGA approach: 0.333 sec elapsed</span></span></code></pre></div>
 <div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out</span>,<span class="fl">4</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME CHROMOSOME EA NEA     N   EAF_avg      dir        beta0</span></span>
@@ -734,7 +734,7 @@ present in all cohorts.</p></li>
 <span><span class="co">#&gt; [1] "Linear regression model for each genetic varaiant"</span></span></code></pre></div>
 <div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">tictoc</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tictoc/man/tic.html" class="external-link">toc</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Perform env-MR-MEGA approach: 0.392 sec elapsed</span></span></code></pre></div>
+<span><span class="co">#&gt; Perform env-MR-MEGA approach: 0.369 sec elapsed</span></span></code></pre></div>
 <div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">out.env</span>,<span class="fl">4</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    MARKERNAME CHROMOSOME EA NEA     N   EAF_avg      dir        beta0</span></span>
@@ -810,7 +810,7 @@ Resolution.”</span> <em>Human Molecular Genetics</em> 26 (18): 3639–50.
 
       <footer><div class="copyright">
   <p></p>
-<p>Developed by Siru Wang, Jennifer Asimit, Andrew P Morris.</p>
+<p>Developed by Siru Wang, Oyesola O. Ojewunmi, Abram Kamiza, Michele Ramsay, Andrew P Morris, Tinashe Chikowore, Segun Fatumo, Jennifer Asimit.</p>
 </div>
 
 <div class="pkgdown">
