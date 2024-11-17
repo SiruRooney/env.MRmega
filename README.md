@@ -16,7 +16,7 @@ Website available: <https://SiruRooney.github.io/env.MRmega/>
 
 For more details, please see:
 
-Wang, S., Ojewunmi, O.O., Kamiza, A. et al. Accounting for heterogeneity due to environmental sources in meta-analysis of genome-wide association studies. Commun Biol 7, 1512 (2024). https://doi.org/10.1038/s42003-024-07236-9 [PDF](https://rdcu.be/d0hIh)
+S Wang, OO Ojewunmi,  A Kamiza, M Ramsay, AP Morris, T Chikowore, S Fatumo, JL Asimit. Accounting for heterogeneity due to environmental sources in meta-analysis of genome-wide association studies. *Communications Biology*. 2024 Nov 14;7(1):1512. https://doi.org/10.1038/s42003-024-07236-9 [PDF](https://rdcu.be/d0hIh)
 
 
 ## System requirements
